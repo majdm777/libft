@@ -6,7 +6,7 @@
 /*   By: mmaatouk <mmaatouk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 19:05:41 by mmaatouk          #+#    #+#             */
-/*   Updated: 2026/11/14 16:52:39 by mmaatouk         ###   ########.fr       */
+/*   Updated: 2026/11/15 19:37:01 by mmaatouk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new;
 	t_list	*temp;
 
-	if (!lst)
+	if (!lst || !f || !del)
 		return (NULL);
 	new = ft_lstnew(f(lst->content));
 	if (!new)

@@ -6,7 +6,7 @@
 /*   By: mmaatouk <mmaatouk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 15:08:27 by mmaatouk          #+#    #+#             */
-/*   Updated: 2026/11/14 16:54:24 by mmaatouk         ###   ########.fr       */
+/*   Updated: 2026/11/15 19:41:59 by mmaatouk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 	i = 0;
 	str = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
-	if (!str)
+	if (!str || !f)
 		return (NULL);
 	while (s[i])
 	{

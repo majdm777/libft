@@ -6,7 +6,7 @@
 /*   By: mmaatouk <mmaatouk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 15:43:18 by mmaatouk          #+#    #+#             */
-/*   Updated: 2026/11/14 16:54:07 by mmaatouk         ###   ########.fr       */
+/*   Updated: 2026/11/15 19:41:35 by mmaatouk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	int	i;
 
+	if (!f)
+		return ;
 	i = 0;
 	while (s[i])
 	{

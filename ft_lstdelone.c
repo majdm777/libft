@@ -6,7 +6,7 @@
 /*   By: mmaatouk <mmaatouk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 18:20:25 by mmaatouk          #+#    #+#             */
-/*   Updated: 2026/11/14 16:52:23 by mmaatouk         ###   ########.fr       */
+/*   Updated: 2026/11/15 19:39:34 by mmaatouk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	if (!lst)
+	if (!lst || !del)
 		return ;
 	del(lst->content);
 	free(lst);

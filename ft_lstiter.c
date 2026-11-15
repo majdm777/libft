@@ -6,7 +6,7 @@
 /*   By: mmaatouk <mmaatouk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 18:59:59 by username          #+#    #+#             */
-/*   Updated: 2026/11/14 16:52:29 by mmaatouk         ###   ########.fr       */
+/*   Updated: 2026/11/15 19:38:38 by mmaatouk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	t_list	*temp;
 
+	if (!lst || !f)
+		return ;
 	temp = lst;
 	while (temp)
 	{
