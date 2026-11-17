@@ -137,15 +137,7 @@ The linked list functions include:
 
 - `ft_lstnew` – Creates a new list node.
 - `ft_lstadd_front` – Adds a node to the beginning of a list.
-- `ft_lstsize` – Counts the number of nodes.
-- `ft_lstlast` – Returns the last node.
-- `ft_lstadd_back` – Adds a node to the end of a list.
-- `ft_lstdelone` – Deletes a single node and frees its content.
-- `ft_lstclear` – Deletes and frees an entire list.
-- `ft_lstiter` – Applies a function to each node's content.
-- `ft_lstmap` – Creates a new list by applying a function to each node's content.
-
-## Technical Choices
+- `ft_lstsize` – Counts the number of nodes
 
 - **C language:** Used to understand low-level programming concepts.
 - **Static library:** The project produces `libft.a`, allowing functions to be reused.
